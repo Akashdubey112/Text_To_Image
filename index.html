@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Ai Image Generator</title>
+
+</head>
+
+<body class="text-white d-flex align-items-center justify-content-center min-vh-100">
+
+    <div class="container p-4 rounded shadow-lg bg-opacity-50 bg-dark" style="max-width: 40rem; backdrop-filter: blur(10px);">
+        <h1 class="text-center">Your Ai Image Generator</h1>
+        <p class="text-center  text-light fst-italic">Write your prompt here to generate images with the power of Ai</p>
+
+        <form class="d-flex gap-2 mt-4">
+            <input type="text" id="user-prompt" class="form-control" placeholder="Type your prompt here..." autocomplete="off">
+            <button type="button" id="generate" class="btn btn-info fs-6">Generate</button>
+        </form>
+
+        <div class="result mt-3 text-center">
+            <div id="loading" class="text-warning d-none">Generating...</div>
+            <div id="image-grid" class="row g-2 mt-3">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
