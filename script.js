@@ -5,6 +5,8 @@ const maxImages = 6;
 
 let selectedImageNumber = null;
 
+const clearButton = document.getElementById('clearButton');
+
 // Function to generate a random number between min and max (inclusive)
 
 function getRandomNumber(min, max) {
@@ -90,6 +92,13 @@ document.getElementById("generate").addEventListener('click', () => {
         alert("Please enter a prompt!");
     }
 });
+
+// function for delete button
+clearButton.addEventListener('click', function() {
+document.getElementById("user-prompt").value = ''; // Clear the textarea
+    
+});
+
 
 // Function to download image
 
